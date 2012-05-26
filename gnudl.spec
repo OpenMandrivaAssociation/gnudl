@@ -1,6 +1,6 @@
 %define         srcname       gdl
-# imagemagick version insufficient in mdv 2010.1
-%if %mdkversion >= 201100
+# imagemagick version insufficient in mdv < 2012
+%if %mdkversion >= 201200
 %define         withMagic     yes
 %else
 %define         withMagic     no
@@ -32,7 +32,7 @@ BuildRequires:  fftw-devel
 BuildRequires:  udunits2-devel
 BuildRequires:  jpeg-devel
 BuildRequires:  pslib-devel
-%if %mdkversion >= 201100
+%if %mdkversion >= 201200
 BuildRequires:  imagemagick-devel
 %endif
 
@@ -51,7 +51,7 @@ library routines written in GDL in the gnudatalanguage/lib directory.
 
 %build
 autoreconf --force --install
-%configure2_5x  --with-Magick=yes    \
+%configure2_5x  --with-Magick=%{withMagic}    \
                 --with-hdf=no        \
                 --with-fftw=yes      \
                 --with-python=no     \
