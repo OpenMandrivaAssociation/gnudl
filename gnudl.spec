@@ -13,7 +13,7 @@ Source0:        http://sourceforge.net/projects/gnudatalanguage/files/gdl/%{vers
 
 BuildRequires:  autoconf
 BuildRequires:  automake
-BuildRequires:  gomp-devel
+BuildRequires:  libgomp-devel
 BuildRequires:  readline-devel
 BuildRequires:  libwxgtku-devel
 BuildRequires:  ncurses-devel
