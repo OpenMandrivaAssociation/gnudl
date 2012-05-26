@@ -1,4 +1,10 @@
 %define         srcname       gdl
+# imagemagick version insufficient in mdv 2010.1
+%if %mdkversion >= 201100
+%define         withMagic     yes
+%else
+%define         withMagic     no
+%endif
 
 Name:           gnudl
 Version:        0.9.2
@@ -26,8 +32,9 @@ BuildRequires:  fftw-devel
 BuildRequires:  udunits2-devel
 BuildRequires:  jpeg-devel
 BuildRequires:  pslib-devel
+%if %mdkversion >= 201100
 BuildRequires:  imagemagick-devel
-
+%endif
 
 %description
 A free compatible incremental compiler (i.e. runs Interactive Data
