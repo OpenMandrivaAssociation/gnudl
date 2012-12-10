@@ -70,3 +70,16 @@ rm -rf %{buildroot}
 %{_bindir}/gdl
 %{_datadir}/gnudatalanguage/*
 
+
+
+%changelog
+* Sat May 26 2012 Frank Kober <emuse@mandriva.org> 0.9.2-1mdv2011.0
++ Revision: 800767
+- backport to 2011 doesn't support Magick either
+- backport to 2010.1 doesn't support Magick
+- revert gomp-devel BR to libgomp-devel for backports
+
+* Fri May 25 2012 Frank Kober <emuse@mandriva.org> 0.9.2-1
++ Revision: 800555
+- imported package gnudl
+
