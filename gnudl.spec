@@ -8,7 +8,7 @@
 
 Name:           gnudl
 Version:        0.9.2
-Release:        %mkrel 1
+Release:        2
 Summary:        A free incremental compiler quite similar and compatible with IDL
 License:        GPLv2+
 Group:          Development/Other
