@@ -13,7 +13,7 @@ Summary:        A free incremental compiler quite similar and compatible with ID
 License:        GPLv2+
 Group:          Development/Other
 
-URL:            http://gnudatalanguage.sourceforge.net/
+URL:            https://gnudatalanguage.sourceforge.net/
 Source0:        http://sourceforge.net/projects/gnudatalanguage/files/gdl/%{version}/%{srcname}-%{version}.tar.gz
 
 
