@@ -17,6 +17,8 @@ URL:            https://gnudatalanguage.sourceforge.net/
 Source0:        http://sourceforge.net/projects/gnudatalanguage/files/gdl/%{version}/%{srcname}-%{version}.tar.gz
 
 
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libgomp-devel
